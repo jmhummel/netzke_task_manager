@@ -5,8 +5,10 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'will_paginate', '~>3.0.pre2'
 gem 'sqlite3'
-
+gem 'netzke-core', :git => "git://github.com/nomadcoder/netzke-core.git"
+gem 'netzke-basepack', :git => "git://github.com/nomadcoder/netzke-basepack.git"
 
 # Gems used only for assets and not required
 # in production environments by default.

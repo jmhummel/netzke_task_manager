@@ -1,0 +1,15 @@
+<%= netzke :tasks, 
+  :class_name => "Netzke::Basepack::GridPanel", 
+  :model => "Task",
+  :title => "Incomplete Tasks",
+  :columns => [:done, :name, 
+    {:name => :notes, :width => 200},
+    {:name => :priority, :width => 50
+},
+    {:name => :due, :header => "Due on"}],
+  # Standard Ext.grid.EditorGridPanel configuation options:
+  :border => true,
+  :header => false,
+  # force the columns to occupy all the available width
+  :view_config => {:force_fit => true}
+%>
